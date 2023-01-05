@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const toggleMenu = () => document.body.classList.toggle("open");
     return (
-            <nav className="navbar px-4">
+            <nav className="navbar px-4 max-w-[1440px] mx-auto">
         <button onClick={toggleMenu} className="burger"></button>
         <img src={mengary} className='logo' alt="" />
         <button className="button mengary">Mengary</button>
