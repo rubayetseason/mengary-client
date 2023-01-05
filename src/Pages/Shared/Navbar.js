@@ -2,6 +2,7 @@ import React from 'react';
 import chevron from './images/chevron.svg';
 import './Navbar.css';
 import mengary from './images/logo.jpg';
+import { BsMinecart } from "react-icons/bs";
 
 const Navbar = () => {
     const toggleMenu = () => document.body.classList.toggle("open");
@@ -27,14 +28,14 @@ const Navbar = () => {
               <img src={chevron} alt='' />
             </button>
             <div className="dropdown-menu">
-              <button>Live Chat</button>
-              <button>Send Email</button>
-              <button>Request Help</button>
+              <button>Football & Jersey</button>
+              <button>Sweater & Sweatshirts</button>
+              <button>Pants & Trousers</button>
+              <button>Sneakers & Sandals</button>
             </div>
           </div>
           <div className="dropdown">
-            <button className="button">
-             Login
+            <button className="button btn glass rounded-none"><BsMinecart className='text-lg'/>&nbsp;Cart
             </button>
           </div>
         </div>

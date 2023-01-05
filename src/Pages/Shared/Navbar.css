@@ -2,6 +2,7 @@
   font-family: rinstonia;
   src: url('./ttf/Rinstonia.ttf') format("truetype");
 }
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 .mengary {
   font-family: rinstonia;
@@ -21,11 +22,11 @@
     cursor: pointer;
     line-height: 1;
     color: inherit;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lora', serif;
     font-size: 20px;
   }
   
-  @media (width >= 640px) {
+  @media (width >= 768px) {
     button {
       font-size: 16px;
     }
@@ -63,7 +64,7 @@
     background-image: url("./images/close.svg");
   }
   
-  @media (width >= 640px) {
+  @media (width >= 768px) {
     .burger {
       display: none;
     }
@@ -82,17 +83,13 @@
     display: none;
   }
   
-  @media (width >= 640px) {
-    .button {
-      padding: 0 10px 0 24px;
-    }
-  
+  @media (width >= 768px) {
     .button > img {
       display: block;
     }
   }
   
-  @media (width >= 640px) {
+  @media (width >= 768px) {
     .dropdown:hover .button {
       opacity: 1;
     }
@@ -114,7 +111,7 @@
     
   }
   
-  @media (width < 640px) {
+  @media (width < 768px) {
     body.open .dropdowns {
       opacity: 1;
       visibility: visible;
@@ -122,7 +119,7 @@
     }
   }
   
-  @media (width >= 640px) {
+  @media (width >= 768px) {
     .dropdowns {
       position: static;
       flex-direction: row;
@@ -145,7 +142,7 @@
     margin-bottom: 28px;
   }
   
-  @media (width >= 640px) {
+  @media (width >= 768px) {
     .dropdown {
       height: 100%;
       flex-direction: row;
@@ -179,7 +176,7 @@
     height: 40px;
   }
   
-  @media (width >= 640px) {
+  @media (width >= 768px) {
     .dropdown-menu > button {
       opacity: 0.6;
     }
