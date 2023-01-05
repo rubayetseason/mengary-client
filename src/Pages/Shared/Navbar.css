@@ -99,6 +99,7 @@ body {
     visibility: hidden;
     transition-property: opacity, visibility;
     transition-duration: 0.3s;
+    
   }
   
   @media (width < 640px) {
@@ -140,7 +141,7 @@ body {
   
     .dropdown-menu {
       position: absolute;
-      top: 72px;
+      top: 65px;
       left: 0;
       width: 180px;
       padding: 6px 24px 10px;
