@@ -33,9 +33,13 @@ const Navbar = () => {
             </button>
             <div className="dropdown-menu">
               <button>Football & Jersey</button>
-              <button>Sweater & Sweatshirts</button>
-              <button>Pants & Trousers</button>
-              <button>Sneakers & Sandals</button>
+              <button>Sneakers & Shoes</button>
+              <button>Mens' Clothings</button>
+              <button>Pants</button>
+              <button>Bags</button>
+              <button>Caps and Hats</button>
+              <button>Bottles</button>
+              <button>Accessories</button>
             </div>
           </div>
           <div className="dropdown">
