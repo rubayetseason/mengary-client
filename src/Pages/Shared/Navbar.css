@@ -1,6 +1,18 @@
-body {
-    background: #2c2c32;
-  }
+@font-face {
+  font-family: rinstonia;
+  src: url('./ttf/Rinstonia.ttf') format("truetype");
+}
+
+.mengary {
+  font-family: rinstonia;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #EBEBEB;
+}
   
   button {
     border: 0;
@@ -31,7 +43,7 @@ body {
     display: flex;
     align-items: stretch;
     height: 72px;
-    background: #19191c;
+    background: #151515;
     color: #f9f9f9;
   }
   
