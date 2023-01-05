@@ -3,6 +3,7 @@ import chevron from './images/chevron.svg';
 import './Navbar.css';
 import mengary from './images/logo.jpg';
 import { BsMinecart } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const toggleMenu = () => document.body.classList.toggle("open");
@@ -13,14 +14,17 @@ const Navbar = () => {
         <button className="button mengary">Mengary</button>
         <div className="dropdowns">
           <div className="dropdown">
-            <button className="button">
+            <Link to='/'>
+            <button onClick={toggleMenu} className="button">
               Home
             </button>
+            </Link>
           </div>
           <div className="dropdown">
-            <button className="button">
+         <Link to='/allproducts'>
+         <button onClick={toggleMenu} className="button">
               Products
-            </button>
+            </button></Link>
           </div>
           <div className="dropdown">
             <button className="button">
