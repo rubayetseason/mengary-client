@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar px-4 max-w-[1440px] mx-auto">
       <button onClick={toggleMenu} className="burger"></button>
-      <img src={mengary} className="logo" alt="" />
+      <img src={mengary} className="logo cursor-pointer" alt="" />
       <button className="button mengary">Mengary</button>
       <div className="dropdowns">
         <div className="dropdown">
