@@ -35,7 +35,7 @@ button {
   }
 }
 
-:is(.navbar, .burger, .dropdowns) {
+:is( .burger, .dropdowns) {
   position: fixed;
   top: 0;
   width: 100%;

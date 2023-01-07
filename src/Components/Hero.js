@@ -1,25 +1,25 @@
 import React from "react";
-import Carousel from "./Carousel";
 import "./Hero.css";
 import { BsArrowRight } from "react-icons/bs";
+import sweater from './images/sweater.png';
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen poster">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="hero poster">
+      <div className="pt-20 flex justify-center items-center gap-10 max-w-7xl flex-col-reverse lg:flex-row-reverse">
         <div className="w-11/12">
-          <Carousel></Carousel>
+          <img src={sweater} alt="" />
         </div>
         <div className="w-full">
-          <h1 className="text-4xl md:text-5xl font-bold text-center">Exciting Offers!!</h1>
-          <h3 className="text-2xl md:text-3xl mt-4 font-bold  text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center">Exciting Offers!!</h1>
+          <h3 className="text-2xl md:text-4xl mt-2 md:mt-5 font-bold text-center">
             Shop freely with{" "}
             <span className="font-extrabold text-transparent text-3xl md:text-4xl bg-clip-text bg-gradient-to-r from-blue-400 to-slate-400">
               Mengary.
             </span>
           </h3>
-          
-          <p className="py-4 text-sm md:text-md text-center">Fresh style. Max comfort. Welcome to Mengary.</p>
+
+          <p className="py-4 md:py-6 text-sm md:text-xl text-center">Fresh style. Max comfort. Welcome to Mengary.</p>
         <div className="text-center">
         <button className="btn hover:bg-transparent shop-btn rounded-none">
             Shop Now &nbsp;
