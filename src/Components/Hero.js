@@ -20,7 +20,6 @@ const Hero = () => {
               Mengary.
             </span>
           </h3>
-
           <p className="py-4 md:py-6 text-sm md:text-xl text-center">
             Fresh style. Max comfort. Welcome to Mengary.
           </p>
