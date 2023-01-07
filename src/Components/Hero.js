@@ -18,6 +18,7 @@ const Hero = () => {
               Mengary.
             </span>
           </h3>
+          
           <p className="py-4 text-sm md:text-md text-center">Fresh style. Max comfort. Welcome to Mengary.</p>
         <div className="text-center">
         <button className="btn hover:bg-transparent shop-btn rounded-none">
