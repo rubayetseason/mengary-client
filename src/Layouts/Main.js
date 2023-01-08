@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className=''>
+            <div className='pt-[4.5rem]'>
             <Outlet></Outlet>
             </div>
             <Footer></Footer>

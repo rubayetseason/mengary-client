@@ -11,10 +11,10 @@ const Hero = () => {
           <img src={sweater} alt="" />
         </div>
         <div className="w-full">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-green-500 to-blue-500 pb-2">
             Exciting Offers!!
           </h1>
-          <h3 className="text-2xl md:text-4xl mt-2 md:mt-5 font-bold text-center">
+          <h3 className="text-3xl md:text-4xl mt-2 md:mt-5 font-bold text-center">
             Shop freely with{" "}
             <span className="font-extrabold text-transparent text-3xl md:text-4xl bg-clip-text bg-gradient-to-r from-blue-400 to-slate-400">
               Mengary.

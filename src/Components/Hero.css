@@ -8,7 +8,7 @@
   color: black;
   position: relative;
   overflow: hidden;
-  transition: border 0.6s ease-in-out;
+  transition: border 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 
 .shop-btn::before {
@@ -25,7 +25,7 @@
 }
 
 .shop-btn:hover {
-  color: black;
+  color: white;
   font-weight: 600;
   border: 2px solid #0096ff;
 }
