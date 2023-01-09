@@ -32,3 +32,8 @@
 .shop-btn:hover::before {
   height: 180%;
 }
+
+.started {
+  border: 2px solid black;
+  color: black;
+}

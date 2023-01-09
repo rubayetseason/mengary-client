@@ -1,21 +1,35 @@
-import React from 'react';
-import shoe from './images/ghura-juta.gif';
+import React from "react";
+import shoe from "./images/ghura-juta.gif";
+import { BsArrowRight } from "react-icons/bs";
 
 const SecondHero = () => {
-    return (
-        <div className="hero bg-white">
-        <div className="grid sm:grid-cols-1 md:grid-cols-2">
-            <div className=''>
-          <img src={shoe} alt='' className="w-3/4 mx-auto" />
-            </div>
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button className="btn btn-primary">Get Started</button>
+  return (
+    <div className=" bg-white mx-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="">
+          <img src={shoe} alt="" className="w-10/12 md:3/4 mx-auto" />
+        </div>
+        <div className="pt-8">
+          <h1 className="text-4xl text-center md:text-left md:text-5xl font-bold">
+            Collections from brands around the globe.
+          </h1>
+          <p className="text-md md:text-xl text-center md:text-left font-semibold mt-5">
+            1000+ Brands | 6000+ Products | 1 Million+ Customers
+          </p>
+          <p className="text-3xl text-center md:text-left font-bold py-6
+            bg-gradient-to-r bg-clip-text text-transparent 
+            from-indigo-500 via-purple-500 to-indigo-500
+            animate-text">
+            Less Hassle. More shopping. 
+          </p>
+          <div className="text-center md:text-left">
+            <button className="btn btn-outline rounded-none started">Check collections &nbsp;
+              <BsArrowRight /></button>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default SecondHero;
