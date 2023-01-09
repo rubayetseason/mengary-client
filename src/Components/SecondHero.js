@@ -3,7 +3,7 @@ import shoe from './images/ghura-juta.gif';
 
 const SecondHero = () => {
     return (
-        <div className="hero  bg-white">
+        <div className="hero bg-white">
         <div className="grid sm:grid-cols-1 md:grid-cols-2">
             <div className=''>
           <img src={shoe} alt='' className="w-3/4 mx-auto" />

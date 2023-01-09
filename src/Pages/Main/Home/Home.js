@@ -20,7 +20,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="my-20">
+      <section className="my-28">
         <SecondHero></SecondHero>
       </section>
     </div>
