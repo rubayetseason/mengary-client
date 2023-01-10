@@ -1,5 +1,5 @@
 import React from "react";
-import shoe from "./images/ghura-juta.gif";
+import shoe from "./images/oie_1018947ZmYF7sA4.gif";
 import { BsArrowRight } from "react-icons/bs";
 
 const SecondHero = () => {
@@ -7,7 +7,7 @@ const SecondHero = () => {
     <div className=" bg-white mx-5">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         <div className="">
-          <img src={shoe} alt="" className="w-10/12 md:3/4 mx-auto" />
+          <img src={shoe} alt="" className="spin-shoe w-10/12 md:3/4 mx-auto" />
         </div>
         <div className="pt-8">
           <h1 className="text-4xl text-center md:text-left md:text-5xl font-bold">

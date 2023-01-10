@@ -37,3 +37,9 @@
   border: 2px solid black;
   color: black;
 }
+.spin-shoe{
+  background-image: url('./images/ezgif.com-gif-maker-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
