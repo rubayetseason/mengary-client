@@ -1,15 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../Pages/Shared/Footer';
-import Navbar from '../Pages/Shared/Navbar';
+import Header from '../Pages/Shared/Header';
 
 const Main = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <div className='pt-[4.5rem]'>
+            <Header></Header>
             <Outlet></Outlet>
-            </div>
             <Footer></Footer>
         </div>
     );

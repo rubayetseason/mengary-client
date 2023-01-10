@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from "../../../Components/Carousel/Carousel";
 import Hero from "../../../Components/Hero";
 import SecondHero from "../../../Components/SecondHero";
 
@@ -22,6 +23,9 @@ const Home = () => {
       </section>
       <section className="my-20 md:my-28">
         <SecondHero></SecondHero>
+      </section>
+      <section className="my-20 md:my-28">
+        <Carousel></Carousel>
       </section>
     </div>
   );
