@@ -21,10 +21,10 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="my-20 md:my-28">
+      <section className="my-28 md:my-28">
         <SecondHero></SecondHero>
       </section>
-      <section className="my-20 md:my-28">
+      <section className="my-20 md:my-32">
         <Carousel></Carousel>
       </section>
     </div>

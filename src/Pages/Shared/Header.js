@@ -1,5 +1,5 @@
 import React from 'react';
-import { CiShoppingCart } from "react-icons/ci";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import './Header.css';
 
@@ -28,7 +28,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn z-[100] bg-transparent hover:bg-transparent rounded-none cart-btn"><CiShoppingCart className='text-xl' />&nbsp;Cart</Link>
+        <Link className="btn z-[100] bg-transparent hover:bg-transparent rounded-none cart-btn"><AiOutlineShoppingCart className='text-xl' />&nbsp;Cart</Link>
       </div>
     </div>
     );

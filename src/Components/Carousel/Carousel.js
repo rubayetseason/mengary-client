@@ -7,6 +7,7 @@ import earphone from "./images/earphone.jpg";
 import football from "./images/football.jpg";
 import pant from "./images/pants.jpg";
 import shoe from "./images/shoe.jpg";
+import underline from './images/underline.png';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./styles.css";
@@ -38,12 +39,12 @@ const Carousel = () => {
     },
     {
       pic: earphone,
-      name: 'Earphones',
+      name: 'Tunes',
       id: 'earphone'
     },
     {
       pic: football,
-      name: 'Football',
+      name: 'Sports',
       id: 'sports'
     },
     {
@@ -59,6 +60,11 @@ const Carousel = () => {
   ]
 
   return (
+    <div>
+      <div className="flex flex-col justify-center items-center gap-0">
+      <h1 className="text-center text-3xl md:text-4xl font-bold">Collections</h1>
+      <img className="w-96 mt-[-52px] mb-[-15px]" src={underline} alt="" />
+      </div>
     <Swiper spaceBetween={10} slidesPerView={3} loop>
       {items.map((slide, i) => (
         <SwiperSlide key={i}>
@@ -67,6 +73,7 @@ const Carousel = () => {
         </SwiperSlide>
       ))}
     </Swiper>
+    </div>
   );
 };
 
