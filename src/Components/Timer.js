@@ -26,7 +26,7 @@ return <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
       <span>{days}</span>
     </span>
     days
-  </div> 
+  </div>
   <div className="flex flex-col">
     <span className="font-mono text-5xl">
       <span>{hours}</span>
