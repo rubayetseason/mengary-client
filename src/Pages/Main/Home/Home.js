@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../../../Components/Carousel/Carousel";
+import Deal from "../../../Components/Deal";
 import Hero from "../../../Components/Hero";
 import SecondHero from "../../../Components/SecondHero";
 
@@ -26,6 +27,9 @@ const Home = () => {
       </section>
       <section className="my-20 md:my-32">
         <Carousel></Carousel>
+      </section>
+      <section>
+        <Deal></Deal>
       </section>
     </div>
   );

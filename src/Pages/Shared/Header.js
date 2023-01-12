@@ -18,7 +18,7 @@ const Header = () => {
             <li className='hover:text-white'><Link>Categories</Link></li>
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl mengary">Mengary</Link>
+        <Link className="btn btn-ghost normal-case text-xl mengary text-white">Mengary</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
