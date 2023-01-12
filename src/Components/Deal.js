@@ -19,17 +19,17 @@ const Deal = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className="text-red-600">
             DEAL OF THE WEEK
         </div>
-        <div>
+        <div className="text-3xl font-semibold">
         Multi-pocket Chest Bag Black
         </div>
 <div>
 <Timer givenTime={2505600000}></Timer>
 </div>
         <div>
-            <button className="btn btn-primary">Shop Now</button>
+            <button className="btn rounded-none shop-btn bg-transparent hover:bg-transparent z-[100]">Shop Now</button>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 0%;
-  background: #0096ff;
+  background: black;
   z-index: -1;
   transition: 0.6s ease-in-out;
   bottom: 0;
@@ -27,7 +27,7 @@
 .shop-btn:hover {
   color: white;
   font-weight: 600;
-  border: 2px solid #0096ff;
+  border: 2px solid black;
 }
 .shop-btn:hover::before {
   height: 180%;

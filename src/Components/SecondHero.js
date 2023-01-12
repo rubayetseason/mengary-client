@@ -23,7 +23,7 @@ const SecondHero = () => {
             Less Hassle. More shopping. 
           </p>
           <div className="text-center md:text-left">
-            <button className="btn btn-outline rounded-none started">Check collections &nbsp;
+            <button className="btn shop-btn bg-transparent hover:bg-transparent z-[100] rounded-none started">Check collections &nbsp;
               <BsArrowRight /></button>
           </div>
         </div>
