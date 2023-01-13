@@ -18,10 +18,10 @@ const ReviewItem = ({review}) => {
   <div className="">
     <p className='text-lg mb-5'>"{desc}"</p>
   </div>
-  <p className='font-bold text-lg items-start'>{name}, {location}</p>
+  <p className='font-bold text-lg items-start mb-2'>{name}, {location}</p>
   <div className='flex justify-between'>
     <div className='flex items-center text-sm'><GoVerified className='text-[#0CCE6B] text-md'/>&nbsp;Verified purchase</div>
-    <div className='text-4xl'><FaQuoteRight/></div>
+    <div className='text-3xl'><FaQuoteRight/></div>
   </div>
 </div>
     );
