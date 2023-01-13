@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../../../Components/Carousel/Carousel";
 import Deal from "../../../Components/Deal";
 import Hero from "../../../Components/Hero";
+import Review from "../../../Components/Review";
 import SecondHero from "../../../Components/SecondHero";
 
 const Home = () => {
@@ -30,6 +31,9 @@ const Home = () => {
       </section>
       <section>
         <Deal></Deal>
+      </section>
+      <section>
+        <Review></Review>
       </section>
     </div>
   );

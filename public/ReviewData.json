@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name" : "Raeesahmed",
+        "location" : "UK",
+        "review" : "Loving the simplicity of this website and the number of collection of clothes. Fashionable, simple yet budget friendly."
+    },
+    {
+        "id": 2,
+        "name" : "zachaliog",
+        "location" : "United States",
+        "review" : "Really impressed with the quality of the products and customer support. There are many options to customize the orders, very good and flexible. Customer support is quick and on point. I love it so much."
+    },
+    {
+        "id": 3,
+        "name" : "Myplenty",
+        "location" : "Australia",
+        "review" : "Mengary is just easy to use and customise. I love how it's just a blink of an eye to order whatever I want without any hassle. It is a work of genius! Great job guys! Its been extremely reliable."
+    },
+    {
+        "id": 4,
+        "name" : "ClashWithAsh",
+        "location" : "UK",
+        "review" : "I cannot recommend Mengary enough! I've been given amazing customer support throughout and the team have gone above and beyond to assist me. Mengary is more that just a ecommerce site, it's an entire new way of running my wardrobe!"
+    },
+    {
+        "id": 5,
+        "name" : "Praav",
+        "location" : "India",
+        "review" : "Not only is this site great but their customer support is top notch!! After ordering the products I had a TON of questions from people where did I buy it from. They were really impressed with the quality."
+    },
+    {
+        "id": 6,
+        "name" : "Cjaard",
+        "location" : "Malaysia",
+        "review" : "This is a MUST HAVE WEBSITE for any clothing lovers! So happy with this incredible website, it's well organised, tidy, and full of features and benefits to grow your wardrobe."
+    },
+    {
+        "id": 7,
+        "name" : "Wiliam1242",
+        "location" : "Canada",
+        "review" : "I don't usually leave reviews however felt the need to do so for this website. By far the best ecommerce store I have purchased and used for clothings. Not to mention they have great customer support!!"
+    },
+    {
+        "id": 8,
+        "name" : "ccavatu",
+        "location" : "Ghana",
+        "review" : "Mengary is awesome and extremely well put together, and well thought through. But the best part of it is the support! These guys are FANTASTIC!!! They're generally available on chat almost any time of the day or night, and make fixes and tweaks very quickly."
+    },
+    {
+        "id": 9,
+        "name" : "Swalulu",
+        "location" : "Chad",
+        "review" : "I'm the first time installing Mengary, really amazing! I like their products and can save a lot money! Super easy to use! Excellent customer service!"
+    },
+    {
+        "id": 10,
+        "name" : "Lautaro",
+        "location" : "Senegal",
+        "review" : "This is my First and Last ecommerce site, trust me the best site ever you buy for your clothings, other than the functionality they have the best support have ever. they have every solution. and always be there for you."
+    }
+]
