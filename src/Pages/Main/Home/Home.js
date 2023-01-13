@@ -26,7 +26,7 @@ const Home = () => {
       <section className="my-28 md:my-28">
         <SecondHero></SecondHero>
       </section>
-      <section className="my-20 md:my-32">
+      <section>
         <Carousel></Carousel>
       </section>
       <section>

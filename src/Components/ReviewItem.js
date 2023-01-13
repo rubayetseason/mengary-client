@@ -7,7 +7,7 @@ import { FaQuoteRight } from "react-icons/fa";
 const ReviewItem = ({review}) => {
     const {name, location, desc} = review;
     return (
-        <div className="w-72 bg-white border-2 border-black px-4 py-5">
+        <div className="w-72 mx-4 bg-white px-4 py-5 shadow-sm">
 <div className='flex text-[#FEBC13] mb-5'>
     <GiRoundStar/>
     <GiRoundStar/>

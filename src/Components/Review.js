@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import React, { useEffect, useState } from "react";
 import ReviewItem from "./ReviewItem";
+import Marquee from "react-fast-marquee";
 
 const Review = () => {
   const { data: reviews=[] } = useQuery({
@@ -12,14 +12,14 @@ const Review = () => {
     },
   });
 
-  console.log(reviews);
-
-  return <div className="bg-[#f5f5f5]">
-    <h1 className="text-4xl font-semibold text-center">What they say about Mengary</h1>
+  return <div className="bg-[#f5f5f5] py-16">
+    <h1 className="text-3xl md:text-4xl font-semibold text-center mb-10">What they say about Mengary</h1>
     <div>
+    <Marquee direction="right" gradientWidth={40} speed={15}>
         {
-            reviews.map(review => <ReviewItem review={review}></ReviewItem>)
+            reviews.map(review => <ReviewItem key={review.id} review={review}></ReviewItem>)
         }
+          </Marquee>
     </div>
   </div>;
 };
