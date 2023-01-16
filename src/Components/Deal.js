@@ -1,6 +1,7 @@
 import React from "react";
 import sales from "./images/sales-bag.png";
 import Timer from "./Timer";
+import { BsArrowRight } from "react-icons/bs";
 
 const Deal = () => {
   return (
@@ -29,7 +30,7 @@ const Deal = () => {
         </div>
         <div><br />
           <button className="btn rounded-none shop-btn bg-transparent hover:bg-transparent z-[100]">
-            Shop Now
+            Shop Now  &nbsp;<BsArrowRight />
           </button>
         </div>
       </div>
