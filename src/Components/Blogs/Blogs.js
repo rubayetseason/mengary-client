@@ -13,7 +13,7 @@ const Blogs = () => {
       });
 
     return (
-        <div>
+        <div className='mb-10'>
             <p className='pt-10 text-center text-sm md:text-base text-red-700'>LATEST NEWS</p>
             <h2 className='mt-4 text-3xl lg:text-4xl font-semibold text-center'>Fashion New Trends</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 px-2 md:px-6'>
