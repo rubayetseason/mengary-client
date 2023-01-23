@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="flex items-center justify-center w-14 h-14 rounded-full">
               <img src={logo} className="border-b-2" alt="" />
             </div>
-            <span className="self-center text-2xl font-semibold mengary">
+            <span className="self-center text-2xl font-semibold page-title">
               Mengary
             </span>
           </Link>
