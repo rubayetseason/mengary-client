@@ -6,25 +6,34 @@ const Navbar = () => {
   const toggleMenu = () => document.body.classList.toggle("open");
 
   return (
-    <nav className="navbar">
-      <button onClick={toggleMenu} className="burger"></button>
-      <p className="page-title">Mengary</p>
-      <button className="navBtn">Products</button>
-      <div className="dropdowns">
-        <div className="dropdown">
-          <button className="navBtn">
-            Categories
-            <img src={chevron} alt="" />
-          </button>
-          <div className="dropdown-menu">
-            <button>Live Chat</button>
-            <button>Send Email</button>
-            <button>Request Help</button>
-          </div>
-        </div>
-        <button className="navBtn">Cart</button>
+    <nav class="navbar">
+    <button onClick={toggleMenu} class="burger"></button>
+    <button class="page-title">Mengary</button>
+    <div class="dropdowns">
+      <div class="dropdown">
+        <button class="navBtn">
+          All Products
+        </button>
+        <br />
       </div>
-    </nav>
+      <div class="dropdown">
+        <button class="navBtn">
+          Categories
+          <img src={chevron} alt='' />
+        </button>
+        <div class="dropdown-menu">
+          <button>Learn CSS Ebook</button>
+          <button>Security Course</button>
+          <button>Masterclass Bundle</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="navBtn">
+          Cart
+        </button>
+      </div>
+    </div>
+  </nav>
   );
 };
 
