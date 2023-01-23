@@ -4,7 +4,7 @@
   object-fit: cover;
   filter: brightness(0.6);
 }
-.carousel-text{
+.carousel-text {
   font-family: rinstonia;
   font-weight: bolder;
 }
@@ -14,11 +14,10 @@
     height: 60vw;
     width: 60vw;
   }
-  .carousel-text{
+  .carousel-text {
     font-family: rinstonia;
     font-weight: lighter;
   }
-  
 }
 
 .swiper {
@@ -35,7 +34,7 @@
   translate: -50% 0;
   width: 800vw;
   height: 800vw;
-  background: #FFF7ED;
+  background: #fff7ed;
   border-radius: 50%;
 }
 
