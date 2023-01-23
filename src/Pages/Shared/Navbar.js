@@ -13,12 +13,18 @@ const Navbar = () => {
     <div class="dropdowns">
       <div class="dropdown">
         <button class="navBtn">
-          All Products
+          Home
         </button>
         <br />
       </div>
       <div class="dropdown">
         <button class="navBtn">
+          All Products
+        </button>
+        <br />
+      </div>
+      <div class="dropdown">
+        <button class="navBtn cata">
           Categories
           <img src={chevron} className='mr-3' alt='' />
         </button>
