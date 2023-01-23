@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import chevron from "./images/chevron.svg";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Navbar = () => {
   const toggleMenu = () => document.body.classList.toggle("open");
@@ -19,7 +20,7 @@ const Navbar = () => {
       <div class="dropdown">
         <button class="navBtn">
           Categories
-          <img src={chevron} alt='' />
+          <img src={chevron} className='mr-3' alt='' />
         </button>
         <div class="dropdown-menu">
           <button>Football and Jerseys</button>
@@ -33,8 +34,8 @@ const Navbar = () => {
         </div>
       </div>
       <div class="dropdown">
-        <button class="navBtn">
-          Cart
+        <button class="btn rounded-none bg-transparent hover:bg-transparent z-[999] cart-btn">
+         <AiOutlineShoppingCart className="text-xl mr-2"/> Cart
         </button>
       </div>
     </div>
