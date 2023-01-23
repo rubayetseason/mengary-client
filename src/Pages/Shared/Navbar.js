@@ -22,9 +22,14 @@ const Navbar = () => {
           <img src={chevron} alt='' />
         </button>
         <div class="dropdown-menu">
-          <button>Learn CSS Ebook</button>
-          <button>Security Course</button>
-          <button>Masterclass Bundle</button>
+          <button>Football and Jerseys</button>
+          <button>Men Clothings</button>
+          <button>Pants</button>
+          <button>Caps and Beanies</button>
+          <button>Water Bottles</button>
+          <button>Earphones</button>
+          <button>Shoes and Sneakers</button>
+          <button>Bags</button>
         </div>
       </div>
       <div class="dropdown">

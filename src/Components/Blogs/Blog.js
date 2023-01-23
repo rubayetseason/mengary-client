@@ -1,5 +1,6 @@
 import React from 'react';
 import { SlCalender } from "react-icons/sl";
+import './Blog.css';
 
 const Blog = ({blog}) => {
     const {thumbnail, name, date} = blog;
@@ -19,7 +20,7 @@ const Blog = ({blog}) => {
               </div>
                 <p className="text-black text-base font-semibold mt-4  tracking-wider">{name}</p>
 <div className='btn-read-box'>
-<button className='text-black text-[15px] tracking-widest font-medium mt-4 btn-read border-b-2 border-black'>READ MORE</button>
+<button className='text-black text-[15px] tracking-widest font-medium mt-4 btn-read'>READ MORE</button>
 </div>
               </div>
             </div>
