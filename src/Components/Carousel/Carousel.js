@@ -74,6 +74,7 @@ const Carousel = () => {
               pic={slide.pic}
               className="bg-orange-50"
               name={slide.name}
+              id={slide.id}
             ></Slide>
           </SwiperSlide>
         ))}
