@@ -39,7 +39,7 @@ const AllProducts = () => {
         </form>
         <p className="mt-4 text-gray-500">Found 100 available items</p>
       </section>
-      <section>
+      <section className='mt-5'>
         <Products></Products>
       </section>
     </div>
