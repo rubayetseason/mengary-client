@@ -14,7 +14,7 @@ const Products = () => {
   });
 
   if (isLoading) {
-    return <Loader></Loader>;
+    return <div className="max-h-screen"><Loader></Loader></div>;
   }
 
   return (

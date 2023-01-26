@@ -8,7 +8,7 @@ const Product = ({ product }) => {
   const reviewStars = (num) => {
     let stars = [];
     for (let i = 0; i < num; i++) {
-      stars.push(<TiStarFullOutline className="text-[#FFC000]" />);
+      stars.push(<TiStarFullOutline key={i} className="text-[#FFC000]" />);
     }
     return stars;
   };
@@ -22,7 +22,7 @@ const Product = ({ product }) => {
 <p className="mt-3 leading-relaxed text-xl font-semibold">$ {price}</p>
         </div>
         <p></p>
-        <button className="addBtnn">Add to cart</button>
+<button className="addBtnn">Add to cart </button>
       </div>
     </div>
   );
