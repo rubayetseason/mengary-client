@@ -1,7 +1,7 @@
 import React from "react";
 import { TiStarFullOutline } from "react-icons/ti";
+import './Product.css';
 
-// TiStarFullOutline
 const Product = ({ product }) => {
   const { name, img, ratings, price } = product;
 
@@ -15,13 +15,14 @@ const Product = ({ product }) => {
   return (
     <div className="card bg-gray-50 rounded-none h-full">
       <img src={img} alt="productImage" />
-      <div className="card-body">
+      <div className="card-body gap-0">
         <div className="mb-5">
-          <h2 className="card-title text-2xl mb-5">{name}</h2>
+          <h2 className="card-title text-2xl">{name}</h2>
           <p className="text-lg flex">{reviewStars(ratings)}</p>
+<p className="mt-3 leading-relaxed text-xl font-semibold">$ {price}</p>
         </div>
-        <p className="leading-relaxed mb-2 text-xl font-semibold">$ {price}</p>
- <button className="btn btn-primary">Add to cart</button>
+        <p></p>
+        <button className="addBtnn">Add to cart</button>
       </div>
     </div>
   );
