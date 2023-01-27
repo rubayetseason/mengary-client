@@ -1,6 +1,7 @@
 import React from "react";
 import shoe from "./images/oie_1018947ZmYF7sA4.gif";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const SecondHero = () => {
   return (
@@ -23,8 +24,8 @@ const SecondHero = () => {
             Less Hassle. More shopping. 
           </p>
           <div className="text-center md:text-left">
-            <button className="btn shop-btn bg-transparent hover:bg-transparent z-[100] rounded-none started">Check collections &nbsp;
-              <BsArrowRight /></button>
+           <Link to='/categories'><button className="btn shop-btn bg-transparent hover:bg-transparent z-[100] rounded-none started">Check collections &nbsp;
+              <BsArrowRight /></button></Link>
           </div>
         </div>
       </div>
