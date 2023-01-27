@@ -8,7 +8,7 @@ const CategoryById = () => {
 
     return (
         <div>
-            this is category item
+  
         </div>
     );
 };

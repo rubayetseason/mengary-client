@@ -13,7 +13,7 @@ const Navbar = () => {
       <button className="page-title">Mengary</button>
       <div className="dropdowns">
         <div className="dropdown">
-          <Link to='/'>
+          <Link to="/">
             <button className="navBtn">Home</button>
           </Link>
           <br />
@@ -30,14 +30,30 @@ const Navbar = () => {
             <img src={chevron} className="mr-3" alt="" />
           </button>
           <div className="dropdown-menu">
-            <button>Football and Jerseys</button>
-            <button>Men Clothings</button>
-            <button>Pants</button>
-            <button>Caps and Beanies</button>
-            <button>Water Bottles</button>
-            <button>Earphones</button>
-            <button>Shoes and Sneakers</button>
-            <button>Bags</button>
+            <button>
+              <Link to="/categories/sports"> Football and Jerseys </Link>
+            </button>
+            <button>
+              <Link to="/categories/clothing">Men Clothings </Link>
+            </button>
+            <button>
+              <Link to="/categories/pants"> Pants </Link>
+            </button>
+            <button>
+              <Link to="/categories/cap"> Caps and Beanies </Link>
+            </button>
+            <button>
+              <Link to="/categories/bottle"> Water Bottles </Link>
+            </button>
+            <button>
+              <Link to="/categories/earphone"> Earphones </Link>
+            </button>
+            <button>
+              <Link to="/categories/shoe"> Shoes and Sneakers </Link>
+            </button>
+            <button>
+              <Link to="/categories/bag"> Bags </Link>
+            </button>
           </div>
         </div>
         <div className="dropdown">
