@@ -2,6 +2,7 @@ import React from "react";
 import sales from "./images/sales-bag.png";
 import Timer from "./Timer";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Deal = () => {
   return (
@@ -29,9 +30,10 @@ const Deal = () => {
           <Timer givenTime={1814400000}></Timer>
         </div>
         <div><br />
-          <button className="btn rounded-none shop-btn bg-transparent hover:bg-transparent z-[100]">
+  <Link to='/categories/bag'>
+  <button className="btn rounded-none shop-btn bg-transparent hover:bg-transparent z-[100]">
             Shop Now  &nbsp;<BsArrowRight />
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

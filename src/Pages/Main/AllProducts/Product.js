@@ -13,7 +13,7 @@ const Product = ({ product }) => {
     return stars;
   };
   return (
-    <div className="card bg-gray-50 rounded-none h-full">
+    <div className="card bg-gray-50 rounded-none shadow-md h-full">
       <img src={img} alt="productImage" />
       <div className="card-body gap-0">
         <div className="mb-5">
