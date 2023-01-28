@@ -8,9 +8,9 @@ const Deal = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-0 bg-[#F3F2EE] py-14 md:py-32 px-5">
       <div className="md:pl-20 my-auto flex flex-col text-3xl font-semibold gap-8 cursor-pointer">
-        <div className="text-[#B7B7B7] font-normal">Clothings Hot</div>
-        <div>Bags Collection</div>
-        <div className="text-[#B7B7B7] font-normal">Accessories</div>
+        <div className="text-[#B7B7B7] font-normal"><Link to='/categories/clothing'>Clothings Hot</Link></div>
+        <div><Link to='/categories/bag'>Bags Collection</Link></div>
+        <div className="text-[#B7B7B7] font-normal"><Link to='/categories/earphone'>Accessories</Link></div>
       </div>
       <div className="relative">
         <img src={sales} alt="" />
