@@ -3,7 +3,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 import './Product.css';
 
 const Product = ({ product }) => {
-  const { name, img, ratings, price } = product;
+  const { name, img, ratings, price, sale } = product;
 
   const reviewStars = (num) => {
     let stars = [];
@@ -14,7 +14,10 @@ const Product = ({ product }) => {
   };
   return (
     <div className="card bg-gray-50 rounded-none shadow-md h-full">
-      <img src={img} alt="productImage" />
+      <img className="relative" src={img} alt="productImage" />
+      {
+        sale && <div className="bg-black text-white w-fit absolute top-6 px-3 py-1 tracking-wider">Sale 20%</div>
+      }
       <div className="card-body gap-0">
         <div className="mb-5">
           <h2 className="card-title text-2xl">{name}</h2>
