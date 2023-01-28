@@ -31,28 +31,28 @@ const Navbar = () => {
           </button>
           <div className="dropdown-menu">
             <button>
-              <Link to="/categories/sports"> Football and Jerseys </Link>
+              <Link to="/allproducts/sports"> Football and Jerseys </Link>
             </button>
             <button>
-              <Link to="/categories/clothing">Men Clothings </Link>
+              <Link to="/allproducts/clothing">Men Clothings </Link>
             </button>
             <button>
-              <Link to="/categories/pants"> Pants </Link>
+              <Link to="/allproducts/pants"> Pants </Link>
             </button>
             <button>
-              <Link to="/categories/cap"> Caps and Beanies </Link>
+              <Link to="/allproducts/cap"> Caps and Beanies </Link>
             </button>
             <button>
-              <Link to="/categories/bottle"> Water Bottles </Link>
+              <Link to="/allproducts/bottle"> Water Bottles </Link>
             </button>
             <button>
-              <Link to="/categories/earphone"> Earphones </Link>
+              <Link to="/allproducts/earphone"> Earphones </Link>
             </button>
             <button>
-              <Link to="/categories/shoe"> Shoes and Sneakers </Link>
+              <Link to="/allproducts/shoe"> Shoes and Sneakers </Link>
             </button>
             <button>
-              <Link to="/categories/bag"> Bags </Link>
+              <Link to="/allproducts/bag"> Bags </Link>
             </button>
           </div>
         </div>

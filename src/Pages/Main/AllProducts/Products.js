@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import Product from "./Product";
 import Loader from "../../Shared/Loader";
+import { useState } from "react";
 
 const Products = () => {
   const { data: products = [], isLoading } = useQuery({
@@ -14,7 +15,11 @@ const Products = () => {
   });
 
   if (isLoading) {
-    return <div className="max-h-screen"><Loader></Loader></div>;
+    return (
+      <div className="max-h-screen">
+        <Loader></Loader>
+      </div>
+    );
   }
 
   return (

@@ -5,7 +5,6 @@ import Product from '../AllProducts/Product';
 const CategoryById = () => {
 
     const items = useLoaderData();
-    console.log(items);
 
     return (
         <div>
