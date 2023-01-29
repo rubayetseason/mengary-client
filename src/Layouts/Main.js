@@ -10,7 +10,7 @@ import { addToDb } from "../Utils/FakeDB";
 
 export const CartContext = createContext([]);
 const Main = () => {
-  const {products, initialCart} = useLoaderData();
+  const { products, initialCart } = useLoaderData();
   const [cart, setCart] = useState(initialCart);
   const handleAddToCart = (product) => {
     //used to get the previous items and new items all together in the cart
