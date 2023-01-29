@@ -5,6 +5,7 @@ import Cart from "../Pages/Main/Cart/Cart";
 import Categories from "../Pages/Main/Categories/Categories";
 import CategoryById from "../Pages/Main/Categories/CategoryById";
 import Home from "../Pages/Main/Home/Home";
+import Payment from "../Pages/Main/Payment/Payment";
 import { productAndCartData } from "../Utils/getCartAndProductData";
 
 export const router = createBrowserRouter([
@@ -34,7 +35,10 @@ export const router = createBrowserRouter([
                 element: <CategoryById></CategoryById>,
                 loader: ({ params }) =>
                 fetch(`http://localhost:5000/products/${params.item}`)
-            },
+            },{
+                path: '/payment',
+                element: <Payment></Payment>
+            }
         ]
     }
 ]);
