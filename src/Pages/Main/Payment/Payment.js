@@ -1,16 +1,23 @@
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 import React from "react";
 import underline from "../../../Components/Carousel/images/underline.png";
 import StripeCheckout from "react-stripe-checkout";
-
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
+import { toast } from "react-hot-toast";
+import { deleteShoppingCart } from "../../../Utils/FakeDB";
 
 const Payment = () => {
   const money = localStorage.getItem("total");
 
+  const empty = () => {
+    deleteShoppingCart();
+    localStorage.removeItem("total");
+  };
+  const refresh = () => window.location.reload(true);
+
   const onToken = (token) => {
     console.log(token);
+    empty();
+    refresh();
+    toast.success("Payment completed successfully.");
   };
   return (
     <div>
@@ -21,7 +28,7 @@ const Payment = () => {
         <img className="w-96 mt-[-52px] mb-[-15px]" src={underline} alt="" />
       </div>
       <div className="text-center text-xl font-semibold mt-5 mb-10">
-        The payment due is $ {money}
+        The payment due is $ {money ? money : 0}
       </div>
       <div className="text-center mb-10">
         <StripeCheckout
