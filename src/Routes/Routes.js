@@ -9,36 +9,37 @@ import Payment from "../Pages/Main/Payment/Payment";
 import { productAndCartData } from "../Utils/getCartAndProductData";
 
 export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main>,
-        loader: productAndCartData,
-        children: [
-            {
-                path: '/',
-                element: <Home></Home>
-            },
-            {
-                path: '/allproducts',
-                element: <AllProducts></AllProducts>
-            },
-            {
-                path: '/categories',
-                element: <Categories></Categories>
-            },
-            {
-                path: '/cart',
-                element: <Cart></Cart>
-            },
-            {
-                path: '/allproducts/:item',
-                element: <CategoryById></CategoryById>,
-                loader: ({ params }) =>
-                fetch(`http://localhost:5000/products/${params.item}`)
-            },{
-                path: '/payment',
-                element: <Payment></Payment>
-            }
-        ]
-    }
+  {
+    path: "/",
+    element: <Main></Main>,
+    loader: productAndCartData,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/allproducts",
+        element: <AllProducts></AllProducts>,
+      },
+      {
+        path: "/categories",
+        element: <Categories></Categories>,
+      },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
+      {
+        path: "/allproducts/:item",
+        element: <CategoryById></CategoryById>,
+        loader: ({ params }) =>
+          fetch(`https://mengary-server.vercel.app/products/${params.item}`),
+      },
+      {
+        path: "/payment",
+        element: <Payment></Payment>,
+      },
+    ],
+  },
 ]);

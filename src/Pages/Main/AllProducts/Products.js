@@ -19,7 +19,9 @@ const Products = () => {
   const { data: products = [], isLoading } = useQuery({
     queryKey: ["products", searchText],
     queryFn: async () => {
-      const res = fetch(`http://localhost:5000/products?search=${searchText}`);
+      const res = fetch(
+        `https://mengary-server.vercel.app/products?search=${searchText}`
+      );
       const data = await (await res).json();
       return data;
     },

@@ -1,7 +1,7 @@
 import { getStoredCart } from "./FakeDB";
 
 export const productAndCartData = async () => {
-  const productData = await fetch("http://localhost:5000/products");
+  const productData = await fetch("https://mengary-server.vercel.app/products");
   const products = await productData.json();
 
   const savedCart = getStoredCart();
