@@ -1,9 +1,14 @@
 import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../Layouts/Main";
 import Products from "./Products";
 
 const AllProducts = () => {
+  const {cart}= useContext(CartContext);
+  console.log(cart);
   return (
+
     <div>
       <section className="bg-[#F3F2EE] py-10 pl-10">
         <h1 className="text-2xl font-semibold">Shop</h1>

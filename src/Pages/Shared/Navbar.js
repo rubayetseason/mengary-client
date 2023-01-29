@@ -3,8 +3,11 @@ import "./Navbar.css";
 import chevron from "./images/chevron.svg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../Layouts/Main";
 
 const Navbar = () => {
+  const {cart} = useContext(CartContext);
   const toggleMenu = () => document.body.classList.toggle("open");
 
   return (
@@ -57,9 +60,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className="dropdown">
-          <button className="btn rounded-none bg-transparent hover:bg-transparent z-[999] cart-btn">
+          <button className="btn rounded-none bg-transparent hover:bg-transparent z-[999] cart-btn relative">
             <AiOutlineShoppingCart className="text-xl mr-2" /> Cart
           </button>
+          <div className="absolute top-0 right-[-3px] bg-white text-black text-sm px-2 rounded-full font-semibold">{cart.length}</div>
         </div>
       </div>
     </nav>

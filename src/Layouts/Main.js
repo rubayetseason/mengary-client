@@ -2,7 +2,7 @@ import React from "react";
 import { createContext } from "react";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Footer from "../Pages/Shared/Footer";
 import Header from "../Pages/Shared/Header";
 import Navbar from "../Pages/Shared/Navbar";
@@ -10,7 +10,8 @@ import { addToDb } from "../Utils/FakeDB";
 
 export const CartContext = createContext([]);
 const Main = () => {
-  const [cart, setCart] = useState([]);
+  const {products, initialCart} = useLoaderData();
+  const [cart, setCart] = useState(initialCart);
   const handleAddToCart = (product) => {
     //used to get the previous items and new items all together in the cart
     // setCart(previous => [...previous, product]);

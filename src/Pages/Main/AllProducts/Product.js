@@ -6,7 +6,7 @@ import "./Product.css";
 
 const Product = ({ product }) => {
   const { name, img, ratings, price, sale } = product;
-  const {handleAddToCart} = useContext(CartContext);
+  const { handleAddToCart } = useContext(CartContext);
 
   const reviewStars = (num) => {
     let stars = [];
@@ -32,7 +32,9 @@ const Product = ({ product }) => {
           </p>
         </div>
         <p></p>
-        <button onClick={() =>handleAddToCart(product)} className="addBtnn">Add to cart </button>
+        <button onClick={() => handleAddToCart(product)} className="addBtnn">
+          Add to cart{" "}
+        </button>
       </div>
     </div>
   );
