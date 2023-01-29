@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { CartContext } from "../../Layouts/Main";
 
 const Navbar = () => {
-  const {cart} = useContext(CartContext);
+  const { cart } = useContext(CartContext);
   const toggleMenu = () => document.body.classList.toggle("open");
 
   return (
@@ -17,13 +17,13 @@ const Navbar = () => {
       <div className="dropdowns">
         <div className="dropdown">
           <Link to="/">
-            <button className="navBtn">Home</button>
+            <button onClick={toggleMenu} className="navBtn">Home</button>
           </Link>
           <br />
         </div>
         <div className="dropdown">
           <Link to="/allproducts">
-            <button className="navBtn">All Products</button>
+            <button onClick={toggleMenu} className="navBtn">All Products</button>
           </Link>
           <br />
         </div>
@@ -34,36 +34,41 @@ const Navbar = () => {
           </button>
           <div className="dropdown-menu">
             <button>
-              <Link to="/allproducts/sports"> Football and Jerseys </Link>
+              <Link onClick={toggleMenu} to="/allproducts/sports"> Football and Jerseys </Link>
             </button>
             <button>
-              <Link to="/allproducts/clothing">Men Clothings </Link>
+              <Link onClick={toggleMenu} to="/allproducts/clothing">Men Clothings </Link>
             </button>
             <button>
-              <Link to="/allproducts/pants"> Pants </Link>
+              <Link onClick={toggleMenu} to="/allproducts/pants"> Pants </Link>
             </button>
             <button>
-              <Link to="/allproducts/cap"> Caps and Beanies </Link>
+              <Link onClick={toggleMenu} to="/allproducts/cap"> Caps and Beanies </Link>
             </button>
             <button>
-              <Link to="/allproducts/bottle"> Water Bottles </Link>
+              <Link onClick={toggleMenu} to="/allproducts/bottle"> Water Bottles </Link>
             </button>
             <button>
-              <Link to="/allproducts/earphone"> Earphones </Link>
+              <Link onClick={toggleMenu} to="/allproducts/earphone"> Earphones </Link>
             </button>
             <button>
-              <Link to="/allproducts/shoe"> Shoes and Sneakers </Link>
+              <Link onClick={toggleMenu} to="/allproducts/shoe"> Shoes and Sneakers </Link>
             </button>
             <button>
-              <Link to="/allproducts/bag"> Bags </Link>
+              <Link onClick={toggleMenu} to="/allproducts/bag"> Bags </Link>
             </button>
           </div>
         </div>
         <div className="dropdown">
-          <button className="btn rounded-none bg-transparent hover:bg-transparent z-[999] cart-btn relative">
-            <AiOutlineShoppingCart className="text-xl mr-2" /> Cart
-          </button>
-          <div className="absolute top-0 right-[-3px] bg-white text-black text-sm px-2 rounded-full font-semibold">{cart.length}</div>
+          <Link onClick={toggleMenu} to='/cart'>
+            {" "}
+            <button className="btn rounded-none bg-transparent hover:bg-transparent z-[999] cart-btn relative">
+              <AiOutlineShoppingCart className="text-xl mr-2" /> Cart
+            </button>
+          </Link>
+          <div className="absolute top-0 right-[-3px] bg-white text-black text-sm px-2 rounded-full font-semibold">
+            {cart.length}
+          </div>
         </div>
       </div>
     </nav>
