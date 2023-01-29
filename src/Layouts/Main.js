@@ -39,8 +39,6 @@ const Main = () => {
     toast.success("Product added to cart");
   };
 
-  console.log(cart);
-
   return (
     <div>
       <CartContext.Provider value={{ cart, setCart, handleAddToCart }}>

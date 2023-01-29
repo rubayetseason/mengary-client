@@ -66,7 +66,7 @@ const Navbar = () => {
               <AiOutlineShoppingCart className="text-xl mr-2" /> Cart
             </button>
           </Link>
-          <div className="absolute top-0 right-[-3px] bg-white text-black text-sm px-2 rounded-full font-semibold">
+          <div className="absolute top-0 right-[-3px] z-[999] bg-white text-black text-sm px-2 rounded-full font-semibold">
             {cart.length}
           </div>
         </div>
