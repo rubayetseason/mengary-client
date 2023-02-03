@@ -25,7 +25,7 @@ const RealHero = () => {
               Exciting offers. Fresh style. Luxury essentials. Max comfort.
             </div>
             <div>
-              <Link to='/allproducts'>
+              <Link to="/allproducts">
                 <button className="btn tracking-widest px-3 bg-transparent hover:bg-transparent shop-btn rounded-none z-[100]">
                   Shop Now &nbsp;
                   <BsArrowRight />
@@ -61,7 +61,7 @@ const RealHero = () => {
               Exciting offers. Fresh style. Luxury essentials. Max comfort.
             </div>
             <div>
-              <Link to='/allproducts'>
+              <Link to="/allproducts">
                 <button className="btn tracking-widest px-3 bg-transparent hover:bg-transparent shop-btn rounded-none z-[100]">
                   Shop Now &nbsp;
                   <BsArrowRight />

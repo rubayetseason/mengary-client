@@ -28,7 +28,7 @@ const Navbar = () => {
           <br />
         </div>
         <div className="dropdown">
-          <button className="navBtn cata">
+          <button  className="navBtn cata">
             Categories
             <img src={chevron} className="mr-3" alt="" />
           </button>
