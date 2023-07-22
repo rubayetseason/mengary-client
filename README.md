@@ -13,7 +13,7 @@ An e-commerce site where customers can purchase their desired product and comple
 - Has a dynamic collection of products based on which buyers can buy their desired goods
 - Buyers can check their booked products at their cart
 - Cart lets the buyer to add more products, remove any unwanted products and proceed to payment
-- Context API is used for the cart functionality
+- Redux Toolkit is used for the cart functionality
 - Payment method is integrated for the buyers to pay for their added product
 - MongoDB is used to perform CRUD operation and store the data of the website
 - Completely responsive for all smaller, medium and larger applications
@@ -32,11 +32,15 @@ Used as the primary framework for the project
 
 Used as a compatible framework to use in React JS
 
+### Reudx-toolkit $ react-redux
+
+Used as a state management medium for cart functionality
+
 ### React icons
 
 Used this library to showcase beautiful icons throughout the project
 
-### MongoDB and CRUD opera
+### MongoDB and CRUD operation
 
 Used MongoDB to perform CRUD operation to the website and store the data
 
