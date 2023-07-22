@@ -6,12 +6,15 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../../Layouts/Main";
 import { removeFromDb } from "../../../Utils/FakeDB";
 import CartItem from "./CartItem";
+import { useSelector } from "react-redux";
 
 const Cart = () => {
-  const { cart, setCart } = useContext(CartContext);
+  const { setCart } = useContext(CartContext);
+  const { products } = useSelector((state) => state.cart);
+  console.log(products);
 
   const handleRemoveItem = (id) => {
-    const remaining = cart.filter((product) => product._id !== id);
+    const remaining = products.filter((product) => product._id !== id);
     setCart(remaining);
     removeFromDb(id);
     toast.success("Item removed successfully.");
@@ -19,7 +22,7 @@ const Cart = () => {
 
   let total = 0;
 
-  for (const product of cart) {
+  for (const product of products) {
     total = total + product.price * product.quantity;
   }
 
@@ -29,10 +32,10 @@ const Cart = () => {
     <div className="flex min-h-screen items-start justify-center bg-gray-100 text-gray-900">
       <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 ">
         <h2 className="text-xl font-semibold">
-          {cart.length ? "Review Cart Items" : "Cart is EMPTY!"}
+          {products.length ? "Review Cart Items" : "Cart is EMPTY!"}
         </h2>
         <ul className="flex flex-col divide-y divide-gray-700">
-          {cart.map((product) => (
+          {products.map((product) => (
             <CartItem
               key={product._id}
               product={product}
@@ -52,17 +55,19 @@ const Cart = () => {
           <Link to="/allproducts">
             <button
               type="button"
-              className="px-6 py-2 border rounded-full border-cyan-400"
+              className="px-6 py-2 border-2 rounded-full border-black"
             >
-              Back <span className="sr-only sm:not-sr-only">To Shop</span>
+              Back To Shop
             </button>
           </Link>
-          <Link to='/payment'><button
-            type="button"
-            className="px-6 py-3 border font-semibold rounded-full hover:bg-cyan-400 bg-cyan-200 text-gray-800"
-          >
-            Place Order
-          </button></Link>
+          <Link to="/payment">
+            <button
+              type="button"
+              className="px-6 py-3 border font-semibold rounded-full hover:bg-cyan-400 bg-cyan-200 text-gray-800"
+            >
+              Place Order
+            </button>
+          </Link>
         </div>
       </div>
     </div>

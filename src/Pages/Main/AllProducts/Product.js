@@ -1,13 +1,17 @@
 import React from "react";
-import { useContext } from "react";
 import { TiStarFullOutline } from "react-icons/ti";
-import { CartContext } from "../../../Layouts/Main";
 import "./Product.css";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../redux/cart/cartSlice";
 
 const Product = ({ product }) => {
-  const { name, img, ratings, price, sale } = product;
-  const { handleAddToCart } = useContext(CartContext);
+  const dispatch = useDispatch();
 
+  const handleAddItemToCart = (product) => {
+    dispatch(addToCart(product));
+  };
+
+  const { name, img, ratings, price, sale } = product;
   const reviewStars = (num) => {
     let stars = [];
     for (let i = 0; i < num; i++) {
@@ -32,7 +36,10 @@ const Product = ({ product }) => {
           </p>
         </div>
         <p></p>
-        <button onClick={() => handleAddToCart(product)} className="addBtnn">
+        <button
+          onClick={() => handleAddItemToCart(product)}
+          className="addBtnn"
+        >
           Add to cart{" "}
         </button>
       </div>

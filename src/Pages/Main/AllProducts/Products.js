@@ -54,7 +54,7 @@ const Products = () => {
               <input
                 type="text"
                 name="searchData"
-                className="px-4 py-2"
+                className="px-4 py-2 outline-none"
                 placeholder="Search..."
               />
               <button className="flex items-center justify-center bg-white px-4 border-l">
