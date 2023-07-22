@@ -1,8 +1,15 @@
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { AiOutlineMinusCircle } from "react-icons/ai";
+import { useDispatch } from "react-redux";
+import {
+  addToCart,
+  removeFromCart,
+  removeOne,
+} from "../../../redux/cart/cartSlice";
 
 const CartItem = ({ product, handleRemoveItem }) => {
-  const { _id, name, price, quantity, img } = product;
+  const dispatch = useDispatch();
+  const { name, price, quantity, img } = product;
   return (
     <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
       <div className="flex w-full space-x-2 sm:space-x-4">
@@ -29,7 +36,7 @@ const CartItem = ({ product, handleRemoveItem }) => {
           <div className="flex gap-2">
             <div className="flex text-sm divide-x">
               <button
-                onClick={() => handleRemoveItem(_id)}
+                onClick={() => dispatch(addToCart(product))}
                 type="button"
                 className="flex bg-blue-500 text-white text-xs md:text-sm items-center px-2 py-1  space-x-1"
               >
@@ -39,7 +46,7 @@ const CartItem = ({ product, handleRemoveItem }) => {
             </div>
             <div className="flex text-sm divide-x">
               <button
-                onClick={() => handleRemoveItem(_id)}
+                onClick={() => dispatch(removeOne(product))}
                 type="button"
                 className="flex bg-red-500 text-white items-center px-2 py-1 text-xs md:text-sm space-x-1"
               >
@@ -49,7 +56,7 @@ const CartItem = ({ product, handleRemoveItem }) => {
             </div>
             <div className="flex text-sm divide-x">
               <button
-                onClick={() => handleRemoveItem(_id)}
+                onClick={() => dispatch(removeFromCart(product))}
                 type="button"
                 className="flex bg-red-700 text-white items-center px-2 py-1 text-xs md:text-sm space-x-1"
               >
