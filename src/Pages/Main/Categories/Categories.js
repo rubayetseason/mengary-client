@@ -1,4 +1,3 @@
-import React from "react";
 import underline from "../../../Components/Carousel/images/underline.png";
 import bag from "../../../Components/Carousel/images/bag.jpg";
 import bottle from "../../../Components/Carousel/images/bottle.jpg";

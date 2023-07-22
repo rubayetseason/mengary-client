@@ -1,4 +1,3 @@
-import React from "react";
 import "./Navbar.css";
 import chevron from "./images/chevron.svg";
 import { AiOutlineShoppingCart } from "react-icons/ai";

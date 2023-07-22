@@ -1,24 +1,10 @@
-import React from "react";
-import { useState } from "react";
-import { useContext } from "react";
-import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../../Layouts/Main";
-import { removeFromDb } from "../../../Utils/FakeDB";
 import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
 
 const Cart = () => {
-  const { setCart } = useContext(CartContext);
   const { products } = useSelector((state) => state.cart);
   console.log(products);
-
-  const handleRemoveItem = (id) => {
-    const remaining = products.filter((product) => product._id !== id);
-    setCart(remaining);
-    removeFromDb(id);
-    toast.success("Item removed successfully.");
-  };
 
   let total = 0;
 
@@ -36,11 +22,7 @@ const Cart = () => {
         </h2>
         <ul className="flex flex-col divide-y divide-gray-700">
           {products.map((product) => (
-            <CartItem
-              key={product._id}
-              product={product}
-              handleRemoveItem={handleRemoveItem}
-            />
+            <CartItem key={product._id} product={product} />
           ))}
         </ul>
         <div className="space-y-1 text-right">

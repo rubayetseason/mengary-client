@@ -1,14 +1,11 @@
-import React from "react";
 import underline from "../../../Components/Carousel/images/underline.png";
 import StripeCheckout from "react-stripe-checkout";
 import { toast } from "react-hot-toast";
-import { deleteShoppingCart } from "../../../Utils/FakeDB";
 
 const Payment = () => {
   const money = localStorage.getItem("total");
 
   const empty = () => {
-    deleteShoppingCart();
     localStorage.removeItem("total");
   };
   const refresh = () => window.location.reload(true);

@@ -6,13 +6,11 @@ import Categories from "../Pages/Main/Categories/Categories";
 import CategoryById from "../Pages/Main/Categories/CategoryById";
 import Home from "../Pages/Main/Home/Home";
 import Payment from "../Pages/Main/Payment/Payment";
-import { productAndCartData } from "../Utils/getCartAndProductData";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    loader: productAndCartData,
     children: [
       {
         path: "/",

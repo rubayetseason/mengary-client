@@ -1,5 +1,3 @@
-import React from "react";
-import Blog from "../../../Components/Blogs/Blog";
 import Blogs from "../../../Components/Blogs/Blogs";
 import Carousel from "../../../Components/Carousel/Carousel";
 import Deal from "../../../Components/Deal";

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-hot-toast";
 
 const initialState = {
   products: [],
@@ -21,11 +22,14 @@ const cartSlice = createSlice({
       else {
         state.products.push({ ...action.payload, quantity: 1 });
       }
+
+      toast.success("Item added successfully.");
     },
     removeFromCart: (state, action) => {
       state.products = state.products.filter(
         (product) => product._id !== action.payload._id
       );
+      toast.success("Item removed successfully.");
     },
     removeOne: (state, action) => {
       const existing = state.products.find(
@@ -39,6 +43,7 @@ const cartSlice = createSlice({
           (product) => product._id !== action.payload._id
         );
       }
+      toast.success("Item removed successfully.");
     },
   },
 });

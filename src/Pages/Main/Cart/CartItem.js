@@ -27,9 +27,9 @@ const CartItem = ({ product, handleRemoveItem }) => {
               <p className="text-sm text-gray-400">Quantity: {quantity}</p>
             </div>
             <div className="text-right">
-              <p className="text-lg font-semibold">{price} $</p>
+              <p className="text-lg font-semibold">Total: {price* quantity} $</p>
               <p className="text-sm text-gray-600">
-                Total: {price * quantity} $
+                Unit price: {price} $
               </p>
             </div>
           </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { TiStarFullOutline } from "react-icons/ti";
 import "./Product.css";
 import { useDispatch } from "react-redux";
