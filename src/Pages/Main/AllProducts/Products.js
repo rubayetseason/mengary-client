@@ -4,6 +4,8 @@ import Loader from "../../Shared/Loader";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
+import ReactPaginate from "react-paginate";
+import "./Products.css";
 
 const Products = () => {
   const [searchText, setSearchText] = useState("");
@@ -25,6 +27,19 @@ const Products = () => {
       return data;
     },
   });
+
+  //pagination
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 9;
+
+  const endOffset = itemOffset + itemsPerPage;
+  const currentItems = products.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(products.length / itemsPerPage);
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % products.length;
+    setItemOffset(newOffset);
+  };
 
   if (isLoading) {
     return (
@@ -67,10 +82,24 @@ const Products = () => {
         </p>
       </section>
       <div className="px-5 mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {products.map((product) => (
+        {currentItems.map((product) => (
           <Product product={product} key={product._id}></Product>
         ))}
       </div>
+      <ReactPaginate
+        breakLabel="..."
+        nextLabel="next >"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={3}
+        pageCount={pageCount}
+        previousLabel="< previous"
+        renderOnZeroPageCount={null}
+        containerClassName="pagination"
+        pageLinkClassName="page-num"
+        previousLinkClassName="page-num"
+        nextLinkClassName="page-num"
+        activeLinkClassName="active"
+      />
     </div>
   );
 };
