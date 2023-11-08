@@ -28,7 +28,7 @@ const Products = () => {
 
   if (isLoading) {
     return (
-      <div className="max-h-screen">
+      <div className="min-h-screen">
         <Loader></Loader>
       </div>
     );
